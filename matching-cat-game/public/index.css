@@ -1,0 +1,244 @@
+/* document body*/
+body {
+    background: linear-gradient(90deg, rgba(193,181,186,1) 0%, rgba(228,193,152,1) 45%, rgba(199,142,86,0.8911939775910365) 100%);
+    /* background: linear-gradient(90deg, rgba(110,67,106,1) 0%, rgba(111,85,57,1) 45%, rgba(134,76,19,0.8911939775910365) 100%); */
+    /* make a dark mode with the above colors? */
+    margin: 8px;
+    max-width: 1420;
+}
+
+/* page header */
+#header-container {
+    display: flex;
+    justify-content: center;
+
+    height: 100px;
+    margin: auto;
+    width: 500px;
+
+    background-color: rgba(255, 228, 196, 0);
+    border-bottom: 3px solid rgb(153, 144, 144);
+    border-radius: 0 0 0 25px;
+    color: rgb(82, 66, 95);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(145, 31, 31);
+}
+
+h1 {
+    font-size: 40px;
+    margin-left: 100px;
+    width: 380px;
+}
+
+/* main */
+#main-container {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 1420px;
+}
+
+/* game board */
+#card-deck {
+    margin: 0;
+    border: 8px ridge rgba(234, 111, 111, 0.443);
+}
+
+#game-bord {
+    padding: 0 2rem;
+    width: 80%;
+    margin: auto;
+}
+
+#game-bord > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+
+    background: rgb(216,184,237);
+    background: linear-gradient(90deg, rgba(216,184,237,1) 0%, rgba(228,193,152,1) 45%, rgba(205,118,166,1) 100%);
+    border-radius: 35px;
+    box-shadow: 5px 5px 20px;
+    padding: 5% 2%;
+}
+
+#game-bord > ul > li {
+    list-style-type: none;
+
+    background-color: orange;
+    border: 4px solid #204a10cb;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.466);
+    color: orange;
+}
+
+#game-bord > ul > li > img {
+    border: 15px orange solid;
+    border-left: 0 orange solid;
+
+    height: 200px;
+    width: 200px;
+}
+
+/* score and new game button */
+#score {
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 30px;
+
+    border-bottom: 2px solid rgb(153, 144, 144);
+    border-radius: 0 0 0 25px;
+}
+
+#score-game-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    width: 60%;
+
+    font-size: 30px;
+    -webkit-text-stroke-color: rgb(145, 31, 31);
+    -webkit-text-stroke-width: 1px;
+}
+
+#new-game-btn {
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+    border-bottom: 2px solid rgb(153, 144, 144);
+    border-radius: 0 0 0 25px;
+
+
+    font-size: 22px;
+
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+/* comment conntent */
+#main-comment-container {
+    margin: auto;
+    width: 70%;
+    background: rgb(216,184,237);
+    background: linear-gradient(90deg, rgba(216,184,237,1) 0%, rgba(228,193,152,1) 45%, rgba(205,118,166,1) 100%);
+    border: 8px ridge rgba(234, 111, 111, 0.443);
+    border-radius: 35px;
+    box-shadow: 5px 5px 20px;
+}
+
+#comment-sec-container {
+    margin: auto;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+#comment-input {
+    width: 90%;
+    background-color: rgba(255, 228, 196, 0);
+    border: none;
+    resize: none;
+    padding-left: 40px;
+    padding-top: 18px;
+    font-size: 16px;
+}
+
+::placeholder {
+    color:  rgb(174, 169, 169);
+}
+
+#comment-input:focus {
+    border: none;
+    outline: none;
+}
+
+#comment-list {
+    padding: 0;
+    margin: 0;
+}
+
+#comment-list > div > li {
+    max-width: 800px;
+}
+
+#comment-btn {
+    width: 10%;
+    background-color: rgb(240, 255, 255, 0);
+    border: none;
+    font-size: 18px;
+    padding-right: 110px;
+}
+
+#card-deck > li {
+    color: orange;
+}
+
+#rating-container {
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    border-radius: 4px;
+    border-bottom: 4px ridge rgba(234, 111, 111, 0.443);
+    font-weight: 500;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(145, 31, 31);
+    margin-bottom: 14px;
+}
+
+#enjoy-playing {
+    margin-bottom: 10px;
+}
+
+#liked-btn,
+#disliked-btn {
+    background-color: rgba(255, 228, 196, 0);
+    font-size: 20px;
+    border: none;
+    padding: 0 10px 3px 15px;
+    margin-bottom: 10px;
+}
+
+#thank-you-container {
+    position: relative;
+    bottom: 60px;
+    font-size: 22px;
+    visibility: hidden;
+}
+
+#thank-you {
+    visibility: hidden;
+    border-bottom: 2px solid rgb(153, 144, 144);
+    border-radius: 0 0 0 25px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(145, 31, 31);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+/* hover effects */
+#comment-btn:hover{
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(145, 31, 31);
+}
+
+#disliked-btn:hover,
+#liked-btn:hover,
+#new-game-btn:hover {
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(153, 144, 144);
+    border-radius: 0 0 0 25px;
+}
